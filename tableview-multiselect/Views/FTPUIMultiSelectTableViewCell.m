@@ -84,8 +84,6 @@ NSString * const SelectedImageName = @"table_row_select.png";
 	}
 	
 	[self changeLabelColors:isHighlight];
-    
-
 }
 
 - (void) changeLabelColors:(BOOL) selected {
@@ -115,9 +113,6 @@ NSString * const SelectedImageName = @"table_row_select.png";
 }
 
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    
-    if (hasSelector) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:[NSString stringWithFormat:@"%@%@", NotificationPrefix, [self notificationName]] object:self];
-    }
+    [[NSNotificationCenter defaultCenter] postNotificationName:[NSString stringWithFormat:@"%@%@", NotificationPrefix, [self notificationName]] object:self];
 }
 @end

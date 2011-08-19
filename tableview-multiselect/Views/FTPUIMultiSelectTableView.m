@@ -32,7 +32,10 @@
 
 		// Create a notification to select table cells
 		self.selectedTableCells = [[NSMutableArray alloc] init];
-        [[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(notificationChangeSelectedCells:) name: [NSString stringWithFormat:@"FTPUITableView_%@", notification] object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver: self 
+                                                 selector: @selector(notificationChangeSelectedCells:) 
+                                                     name: [NSString stringWithFormat:@"FTPUITableView_%@", notification] 
+                                                   object:nil];
     }
     return self;
 }
