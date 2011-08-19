@@ -22,8 +22,8 @@
 		FDE9395013FB40AB0052BC67 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDE9394E13FB40AB0052BC67 /* InfoPlist.strings */; };
 		FDE9395313FB40AB0052BC67 /* tableview_multiselectTests.h in Resources */ = {isa = PBXBuildFile; fileRef = FDE9395213FB40AB0052BC67 /* tableview_multiselectTests.h */; };
 		FDE9395513FB40AB0052BC67 /* tableview_multiselectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE9395413FB40AB0052BC67 /* tableview_multiselectTests.m */; };
-		FDE9396D13FB420F0052BC67 /* FTPUITableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE9396A13FB420F0052BC67 /* FTPUITableCell.m */; };
-		FDE9396E13FB420F0052BC67 /* FTPUITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE9396C13FB420F0052BC67 /* FTPUITableView.m */; };
+		FDE9396D13FB420F0052BC67 /* FTPUIMultiSelectTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE9396A13FB420F0052BC67 /* FTPUIMultiSelectTableViewCell.m */; };
+		FDE9396E13FB420F0052BC67 /* FTPUIMultiSelectTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE9396C13FB420F0052BC67 /* FTPUIMultiSelectTableView.m */; };
 		FDE9397513FB44890052BC67 /* MultiSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE9397413FB44890052BC67 /* MultiSelectViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -57,10 +57,10 @@
 		FDE9395113FB40AB0052BC67 /* tableview-multiselectTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tableview-multiselectTests-Prefix.pch"; sourceTree = "<group>"; };
 		FDE9395213FB40AB0052BC67 /* tableview_multiselectTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tableview_multiselectTests.h; sourceTree = "<group>"; };
 		FDE9395413FB40AB0052BC67 /* tableview_multiselectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tableview_multiselectTests.m; sourceTree = "<group>"; };
-		FDE9396913FB420F0052BC67 /* FTPUITableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTPUITableCell.h; path = Views/FTPUITableCell.h; sourceTree = "<group>"; };
-		FDE9396A13FB420F0052BC67 /* FTPUITableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTPUITableCell.m; path = Views/FTPUITableCell.m; sourceTree = "<group>"; };
-		FDE9396B13FB420F0052BC67 /* FTPUITableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTPUITableView.h; path = Views/FTPUITableView.h; sourceTree = "<group>"; };
-		FDE9396C13FB420F0052BC67 /* FTPUITableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTPUITableView.m; path = Views/FTPUITableView.m; sourceTree = "<group>"; };
+		FDE9396913FB420F0052BC67 /* FTPUIMultiSelectTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; name = FTPUIMultiSelectTableViewCell.h; path = Views/FTPUIMultiSelectTableViewCell.h; sourceTree = "<group>"; };
+		FDE9396A13FB420F0052BC67 /* FTPUIMultiSelectTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTPUIMultiSelectTableViewCell.m; path = Views/FTPUIMultiSelectTableViewCell.m; sourceTree = "<group>"; };
+		FDE9396B13FB420F0052BC67 /* FTPUIMultiSelectTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; name = FTPUIMultiSelectTableView.h; path = Views/FTPUIMultiSelectTableView.h; sourceTree = "<group>"; };
+		FDE9396C13FB420F0052BC67 /* FTPUIMultiSelectTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTPUIMultiSelectTableView.m; path = Views/FTPUIMultiSelectTableView.m; sourceTree = "<group>"; };
 		FDE9397313FB44890052BC67 /* MultiSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultiSelectViewController.h; path = Controllers/MultiSelectViewController.h; sourceTree = "<group>"; };
 		FDE9397413FB44890052BC67 /* MultiSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MultiSelectViewController.m; path = Controllers/MultiSelectViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,10 +167,10 @@
 		FDE9396613FB41F00052BC67 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FDE9396913FB420F0052BC67 /* FTPUITableCell.h */,
-				FDE9396A13FB420F0052BC67 /* FTPUITableCell.m */,
-				FDE9396B13FB420F0052BC67 /* FTPUITableView.h */,
-				FDE9396C13FB420F0052BC67 /* FTPUITableView.m */,
+				FDE9396913FB420F0052BC67 /* FTPUIMultiSelectTableViewCell.h */,
+				FDE9396A13FB420F0052BC67 /* FTPUIMultiSelectTableViewCell.m */,
+				FDE9396B13FB420F0052BC67 /* FTPUIMultiSelectTableView.h */,
+				FDE9396C13FB420F0052BC67 /* FTPUIMultiSelectTableView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -292,8 +292,8 @@
 			files = (
 				FDE9393913FB40AB0052BC67 /* main.m in Sources */,
 				FDE9393C13FB40AB0052BC67 /* tableview_multiselectAppDelegate.m in Sources */,
-				FDE9396D13FB420F0052BC67 /* FTPUITableCell.m in Sources */,
-				FDE9396E13FB420F0052BC67 /* FTPUITableView.m in Sources */,
+				FDE9396D13FB420F0052BC67 /* FTPUIMultiSelectTableViewCell.m in Sources */,
+				FDE9396E13FB420F0052BC67 /* FTPUIMultiSelectTableView.m in Sources */,
 				FDE9397513FB44890052BC67 /* MultiSelectViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

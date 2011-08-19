@@ -6,16 +6,16 @@
 
 #import <UIKit/UIKit.h>
 
-@class FTPUITableView;
+@class FTPUIMultiSelectTableView;
 
 
 @interface MultiSelectViewController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
     
-    FTPUITableView      *table;
-    NSArray             *tableResults;
-    UIToolbar			*toolBar;
+    FTPUIMultiSelectTableView       *table;
+    NSArray                         *tableResults;
+    UIToolbar                       *toolBar;
 }
 
-@property (nonatomic, retain) FTPUITableView *table;
+@property (nonatomic, retain) FTPUIMultiSelectTableView *table;
 
 @end

@@ -7,7 +7,8 @@
 //
 
 #import "MultiSelectViewController.h"
-#import "FTPUITableView.h"
+#import "FTPUIMultiSelectTableView.h"
+#import "FTPUIMultiSelectTableViewCell.h"
 
 
 @implementation MultiSelectViewController
@@ -52,9 +53,10 @@
 {
     
     // Create the table view
-	self.table = [[FTPUITableView alloc] initWithFrame:CGRectMake(0, 0, 320, 460) style:UITableViewStylePlain notification:@"multi_select"];
+	self.table = [[FTPUIMultiSelectTableView alloc] initWithFrame:CGRectMake(0, 0, 320, 460) style:UITableViewStylePlain notification:@"multi_select"];
 	self.table.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
 	self.table.backgroundColor = [UIColor whiteColor];
+    [self.table setIsMultiSelect:YES];
 	[self.table setDelegate:self];
 	[self.table setDataSource:self];
 	[self.view addSubview:self.table];
@@ -99,10 +101,10 @@
     NSString *arrayText = [tableResults objectAtIndex:[indexPath row]];
     
 	static NSString *CellIdentifier = @"Cell";
-    FTPUITableCell *cell = (FTPUITableCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    FTPUIMultiSelectTableViewCell *cell = (FTPUIMultiSelectTableViewCell *)[tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     if (cell == nil) {
-        cell = [[[FTPUITableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[FTPUIMultiSelectTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
 		cell.selectionStyle = UITableViewCellSelectionStyleNone;
 
 		// Notification name is the way the table view knows that to check for multi select
@@ -119,11 +121,10 @@
 	}
 	
 	// Creates the cell with all the necessary variables to set up custom UX presentation
-	[cell createCell:indexPath 
-	 withSectionRows:[tableView numberOfRowsInSection:[indexPath section]] 
-		withSelector:YES 
-	   withHighlight:[table isTableCellSelected:[indexPath row]] 
-	 withMultiSelect:YES];
+	[cell drawCell:indexPath 
+   withSectionRows:[tableView numberOfRowsInSection:[indexPath section]] 
+       hasSelector:YES 
+        isSelected:[table isTableCellSelected:[indexPath row]]];
     
     UILabel *cellLabel = (UILabel *)[cell.contentView viewWithTag:100];
     [cellLabel setText:arrayText];
