@@ -13,11 +13,9 @@
 @interface FTPUITableView : UITableView {
 
 	NSMutableArray *selectedTableCells;
-	BOOL isMultiSelect;
 }
 
 @property (nonatomic, retain) NSMutableArray *selectedTableCells;
-@property (nonatomic, assign) BOOL isMultiSelect;
 
 // Determiens if a specific table cell is selected
 - (BOOL) isTableCellSelected:(NSInteger) rowNumber;

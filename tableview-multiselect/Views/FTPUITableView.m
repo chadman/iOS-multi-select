@@ -16,7 +16,6 @@
 
 @implementation FTPUITableView
 @synthesize selectedTableCells;
-@synthesize isMultiSelect;
 
 - (id)initWithFrame:(CGRect)frame style:(UITableViewStyle)aStyle {
 
