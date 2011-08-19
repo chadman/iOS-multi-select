@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD0596A613FD5F99004DF5C0 /* icon_check_square.gif in Resources */ = {isa = PBXBuildFile; fileRef = FD0596A513FD5F99004DF5C0 /* icon_check_square.gif */; };
+		FD0596AA13FDA3ED004DF5C0 /* select_hollow.png in Resources */ = {isa = PBXBuildFile; fileRef = FD0596A913FDA3ED004DF5C0 /* select_hollow.png */; };
+		FDE9392C13FB40AB0052BC67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDE9392B13FB40AB0052BC67 /* UIKit.framework */; };
+		FDE9392E13FB40AB0052BC67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDE9392D13FB40AB0052BC67 /* Foundation.framework */; };
+		FDE9393013FB40AB0052BC67 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDE9392F13FB40AB0052BC67 /* CoreGraphics.framework */; };
+		FDE9393613FB40AB0052BC67 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDE9393413FB40AB0052BC67 /* InfoPlist.strings */; };
+		FDE9393913FB40AB0052BC67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE9393813FB40AB0052BC67 /* main.m */; };
+		FDE9393C13FB40AB0052BC67 /* tableview_multiselectAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE9393B13FB40AB0052BC67 /* tableview_multiselectAppDelegate.m */; };
+		FDE9393F13FB40AB0052BC67 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDE9393D13FB40AB0052BC67 /* MainWindow.xib */; };
+		FDE9394613FB40AB0052BC67 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDE9392B13FB40AB0052BC67 /* UIKit.framework */; };
+		FDE9394713FB40AB0052BC67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDE9392D13FB40AB0052BC67 /* Foundation.framework */; };
+		FDE9394813FB40AB0052BC67 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDE9392F13FB40AB0052BC67 /* CoreGraphics.framework */; };
+		FDE9395013FB40AB0052BC67 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDE9394E13FB40AB0052BC67 /* InfoPlist.strings */; };
+		FDE9395313FB40AB0052BC67 /* tableview_multiselectTests.h in Resources */ = {isa = PBXBuildFile; fileRef = FDE9395213FB40AB0052BC67 /* tableview_multiselectTests.h */; };
+		FDE9395513FB40AB0052BC67 /* tableview_multiselectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE9395413FB40AB0052BC67 /* tableview_multiselectTests.m */; };
+		FDE9396D13FB420F0052BC67 /* FTPUITableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE9396A13FB420F0052BC67 /* FTPUITableCell.m */; };
+		FDE9396E13FB420F0052BC67 /* FTPUITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE9396C13FB420F0052BC67 /* FTPUITableView.m */; };
+		FDE9397513FB44890052BC67 /* MultiSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDE9397413FB44890052BC67 /* MultiSelectViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDE9394913FB40AB0052BC67 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FDE9391E13FB40AB0052BC67 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FDE9392613FB40AB0052BC67;
+			remoteInfo = "tableview-multiselect";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD0596A513FD5F99004DF5C0 /* icon_check_square.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = icon_check_square.gif; path = Images/icon_check_square.gif; sourceTree = "<group>"; };
+		FD0596A913FDA3ED004DF5C0 /* select_hollow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = select_hollow.png; path = Images/select_hollow.png; sourceTree = "<group>"; };
+		FDE9392713FB40AB0052BC67 /* tableview-multiselect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tableview-multiselect.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDE9392B13FB40AB0052BC67 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FDE9392D13FB40AB0052BC67 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FDE9392F13FB40AB0052BC67 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FDE9393313FB40AB0052BC67 /* tableview-multiselect-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tableview-multiselect-Info.plist"; sourceTree = "<group>"; };
+		FDE9393513FB40AB0052BC67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FDE9393713FB40AB0052BC67 /* tableview-multiselect-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tableview-multiselect-Prefix.pch"; sourceTree = "<group>"; };
+		FDE9393813FB40AB0052BC67 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FDE9393A13FB40AB0052BC67 /* tableview_multiselectAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tableview_multiselectAppDelegate.h; sourceTree = "<group>"; };
+		FDE9393B13FB40AB0052BC67 /* tableview_multiselectAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tableview_multiselectAppDelegate.m; sourceTree = "<group>"; };
+		FDE9393E13FB40AB0052BC67 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		FDE9394513FB40AB0052BC67 /* tableview-multiselectTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "tableview-multiselectTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDE9394D13FB40AB0052BC67 /* tableview-multiselectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "tableview-multiselectTests-Info.plist"; sourceTree = "<group>"; };
+		FDE9394F13FB40AB0052BC67 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FDE9395113FB40AB0052BC67 /* tableview-multiselectTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "tableview-multiselectTests-Prefix.pch"; sourceTree = "<group>"; };
+		FDE9395213FB40AB0052BC67 /* tableview_multiselectTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tableview_multiselectTests.h; sourceTree = "<group>"; };
+		FDE9395413FB40AB0052BC67 /* tableview_multiselectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tableview_multiselectTests.m; sourceTree = "<group>"; };
+		FDE9396913FB420F0052BC67 /* FTPUITableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTPUITableCell.h; path = Views/FTPUITableCell.h; sourceTree = "<group>"; };
+		FDE9396A13FB420F0052BC67 /* FTPUITableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTPUITableCell.m; path = Views/FTPUITableCell.m; sourceTree = "<group>"; };
+		FDE9396B13FB420F0052BC67 /* FTPUITableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FTPUITableView.h; path = Views/FTPUITableView.h; sourceTree = "<group>"; };
+		FDE9396C13FB420F0052BC67 /* FTPUITableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FTPUITableView.m; path = Views/FTPUITableView.m; sourceTree = "<group>"; };
+		FDE9397313FB44890052BC67 /* MultiSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultiSelectViewController.h; path = Controllers/MultiSelectViewController.h; sourceTree = "<group>"; };
+		FDE9397413FB44890052BC67 /* MultiSelectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MultiSelectViewController.m; path = Controllers/MultiSelectViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDE9392413FB40AB0052BC67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDE9392C13FB40AB0052BC67 /* UIKit.framework in Frameworks */,
+				FDE9392E13FB40AB0052BC67 /* Foundation.framework in Frameworks */,
+				FDE9393013FB40AB0052BC67 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDE9394113FB40AB0052BC67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDE9394613FB40AB0052BC67 /* UIKit.framework in Frameworks */,
+				FDE9394713FB40AB0052BC67 /* Foundation.framework in Frameworks */,
+				FDE9394813FB40AB0052BC67 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDE9391C13FB40AB0052BC67 = {
+			isa = PBXGroup;
+			children = (
+				FDE9393113FB40AB0052BC67 /* tableview-multiselect */,
+				FDE9394B13FB40AB0052BC67 /* tableview-multiselectTests */,
+				FDE9392A13FB40AB0052BC67 /* Frameworks */,
+				FDE9392813FB40AB0052BC67 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDE9392813FB40AB0052BC67 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDE9392713FB40AB0052BC67 /* tableview-multiselect.app */,
+				FDE9394513FB40AB0052BC67 /* tableview-multiselectTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDE9392A13FB40AB0052BC67 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDE9392B13FB40AB0052BC67 /* UIKit.framework */,
+				FDE9392D13FB40AB0052BC67 /* Foundation.framework */,
+				FDE9392F13FB40AB0052BC67 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDE9393113FB40AB0052BC67 /* tableview-multiselect */ = {
+			isa = PBXGroup;
+			children = (
+				FDE9396813FB41F80052BC67 /* Controllers */,
+				FDE9396613FB41F00052BC67 /* Views */,
+				FDE9393A13FB40AB0052BC67 /* tableview_multiselectAppDelegate.h */,
+				FDE9393B13FB40AB0052BC67 /* tableview_multiselectAppDelegate.m */,
+				FDE9393D13FB40AB0052BC67 /* MainWindow.xib */,
+				FDE9393213FB40AB0052BC67 /* Supporting Files */,
+			);
+			path = "tableview-multiselect";
+			sourceTree = "<group>";
+		};
+		FDE9393213FB40AB0052BC67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD0596A913FDA3ED004DF5C0 /* select_hollow.png */,
+				FD0596A513FD5F99004DF5C0 /* icon_check_square.gif */,
+				FDE9393313FB40AB0052BC67 /* tableview-multiselect-Info.plist */,
+				FDE9393413FB40AB0052BC67 /* InfoPlist.strings */,
+				FDE9393713FB40AB0052BC67 /* tableview-multiselect-Prefix.pch */,
+				FDE9393813FB40AB0052BC67 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDE9394B13FB40AB0052BC67 /* tableview-multiselectTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDE9395213FB40AB0052BC67 /* tableview_multiselectTests.h */,
+				FDE9395413FB40AB0052BC67 /* tableview_multiselectTests.m */,
+				FDE9394C13FB40AB0052BC67 /* Supporting Files */,
+			);
+			path = "tableview-multiselectTests";
+			sourceTree = "<group>";
+		};
+		FDE9394C13FB40AB0052BC67 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDE9394D13FB40AB0052BC67 /* tableview-multiselectTests-Info.plist */,
+				FDE9394E13FB40AB0052BC67 /* InfoPlist.strings */,
+				FDE9395113FB40AB0052BC67 /* tableview-multiselectTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDE9396613FB41F00052BC67 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FDE9396913FB420F0052BC67 /* FTPUITableCell.h */,
+				FDE9396A13FB420F0052BC67 /* FTPUITableCell.m */,
+				FDE9396B13FB420F0052BC67 /* FTPUITableView.h */,
+				FDE9396C13FB420F0052BC67 /* FTPUITableView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		FDE9396813FB41F80052BC67 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FDE9397313FB44890052BC67 /* MultiSelectViewController.h */,
+				FDE9397413FB44890052BC67 /* MultiSelectViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDE9392613FB40AB0052BC67 /* tableview-multiselect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDE9395813FB40AB0052BC67 /* Build configuration list for PBXNativeTarget "tableview-multiselect" */;
+			buildPhases = (
+				FDE9392313FB40AB0052BC67 /* Sources */,
+				FDE9392413FB40AB0052BC67 /* Frameworks */,
+				FDE9392513FB40AB0052BC67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tableview-multiselect";
+			productName = "tableview-multiselect";
+			productReference = FDE9392713FB40AB0052BC67 /* tableview-multiselect.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FDE9394413FB40AB0052BC67 /* tableview-multiselectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDE9395B13FB40AB0052BC67 /* Build configuration list for PBXNativeTarget "tableview-multiselectTests" */;
+			buildPhases = (
+				FDE9394013FB40AB0052BC67 /* Sources */,
+				FDE9394113FB40AB0052BC67 /* Frameworks */,
+				FDE9394213FB40AB0052BC67 /* Resources */,
+				FDE9394313FB40AB0052BC67 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDE9394A13FB40AB0052BC67 /* PBXTargetDependency */,
+			);
+			name = "tableview-multiselectTests";
+			productName = "tableview-multiselectTests";
+			productReference = FDE9394513FB40AB0052BC67 /* tableview-multiselectTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDE9391E13FB40AB0052BC67 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = FDE9392113FB40AB0052BC67 /* Build configuration list for PBXProject "tableview-multiselect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FDE9391C13FB40AB0052BC67;
+			productRefGroup = FDE9392813FB40AB0052BC67 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDE9392613FB40AB0052BC67 /* tableview-multiselect */,
+				FDE9394413FB40AB0052BC67 /* tableview-multiselectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FDE9392513FB40AB0052BC67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDE9393613FB40AB0052BC67 /* InfoPlist.strings in Resources */,
+				FDE9393F13FB40AB0052BC67 /* MainWindow.xib in Resources */,
+				FD0596A613FD5F99004DF5C0 /* icon_check_square.gif in Resources */,
+				FD0596AA13FDA3ED004DF5C0 /* select_hollow.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDE9394213FB40AB0052BC67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDE9395013FB40AB0052BC67 /* InfoPlist.strings in Resources */,
+				FDE9395313FB40AB0052BC67 /* tableview_multiselectTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FDE9394313FB40AB0052BC67 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDE9392313FB40AB0052BC67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDE9393913FB40AB0052BC67 /* main.m in Sources */,
+				FDE9393C13FB40AB0052BC67 /* tableview_multiselectAppDelegate.m in Sources */,
+				FDE9396D13FB420F0052BC67 /* FTPUITableCell.m in Sources */,
+				FDE9396E13FB420F0052BC67 /* FTPUITableView.m in Sources */,
+				FDE9397513FB44890052BC67 /* MultiSelectViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FDE9394013FB40AB0052BC67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDE9395513FB40AB0052BC67 /* tableview_multiselectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDE9394A13FB40AB0052BC67 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FDE9392613FB40AB0052BC67 /* tableview-multiselect */;
+			targetProxy = FDE9394913FB40AB0052BC67 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FDE9393413FB40AB0052BC67 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDE9393513FB40AB0052BC67 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FDE9393D13FB40AB0052BC67 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDE9393E13FB40AB0052BC67 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		FDE9394E13FB40AB0052BC67 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDE9394F13FB40AB0052BC67 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FDE9395613FB40AB0052BC67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FDE9395713FB40AB0052BC67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		FDE9395913FB40AB0052BC67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tableview-multiselect/tableview-multiselect-Prefix.pch";
+				INFOPLIST_FILE = "tableview-multiselect/tableview-multiselect-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FDE9395A13FB40AB0052BC67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tableview-multiselect/tableview-multiselect-Prefix.pch";
+				INFOPLIST_FILE = "tableview-multiselect/tableview-multiselect-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FDE9395C13FB40AB0052BC67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/tableview-multiselect.app/tableview-multiselect";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tableview-multiselectTests/tableview-multiselectTests-Prefix.pch";
+				INFOPLIST_FILE = "tableview-multiselectTests/tableview-multiselectTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FDE9395D13FB40AB0052BC67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/tableview-multiselect.app/tableview-multiselect";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "tableview-multiselectTests/tableview-multiselectTests-Prefix.pch";
+				INFOPLIST_FILE = "tableview-multiselectTests/tableview-multiselectTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDE9392113FB40AB0052BC67 /* Build configuration list for PBXProject "tableview-multiselect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDE9395613FB40AB0052BC67 /* Debug */,
+				FDE9395713FB40AB0052BC67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDE9395813FB40AB0052BC67 /* Build configuration list for PBXNativeTarget "tableview-multiselect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDE9395913FB40AB0052BC67 /* Debug */,
+				FDE9395A13FB40AB0052BC67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDE9395B13FB40AB0052BC67 /* Build configuration list for PBXNativeTarget "tableview-multiselectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDE9395C13FB40AB0052BC67 /* Debug */,
+				FDE9395D13FB40AB0052BC67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDE9391E13FB40AB0052BC67 /* Project object */;
+}
