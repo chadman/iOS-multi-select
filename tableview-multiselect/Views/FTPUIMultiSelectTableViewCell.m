@@ -6,9 +6,9 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "FTPUITableCell.h"
+#import "FTPUIMultiSelectTableViewCell.h"
 
-@interface FTPUITableCell (PRIVATE)
+@interface FTPUIMultiSelectTableViewCell (PRIVATE)
 extern NSString * const NotificationPrefix;
 extern NSString * const SelectedImageName;
 
@@ -16,12 +16,11 @@ extern NSString * const SelectedImageName;
 @end
 
 
-@implementation FTPUITableCell
-@synthesize hasMultiSelect;
+@implementation FTPUIMultiSelectTableViewCell
 @synthesize hasSelector;
 @synthesize rowNumber;
 @synthesize totalRowsInSection;
-@synthesize isHighlighted;
+@synthesize isSelected;
 @synthesize highlightedColor;
 @synthesize unhighlightedColor;
 
@@ -52,12 +51,6 @@ NSString * const SelectedImageName = @"table_row_select.png";
     return self;
 }
 
-
-// To make sure that nothing happens when the cell is selected (though it shouldn't be)
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-}
-
-
 - (void)dealloc {
 	[_notificationName release];
     [highlightedColor release];
@@ -65,23 +58,13 @@ NSString * const SelectedImageName = @"table_row_select.png";
     [super dealloc];
 }
 
-- (void) createCell: (NSIndexPath *)indexPath withSectionRows: (NSInteger)sectionRows withSelector:(BOOL)isSelector withHighlight:(BOOL)isHighlight {
+- (void) drawCell:(NSIndexPath *)indexPath withSectionRows:(NSInteger)sectionRows hasSelector:(BOOL)selector isSelected:(BOOL)selected {
 	
-	[self createCell:indexPath 
-	 withSectionRows:sectionRows 
-		withSelector:isSelector 
-	   withHighlight:isHighlight 
-	 withMultiSelect:NO];
-}
-
-- (void) createCell: (NSIndexPath *)indexPath withSectionRows: (NSInteger)sectionRows withSelector:(BOOL)isSelector withHighlight:(BOOL)isHighlight withMultiSelect:(BOOL)multiSelect {
-
-	[self setHasSelector:isSelector];
+    [self setHasSelector:selector];
 	[self setRowNumber:[indexPath row]];
 	[self setTotalRowsInSection:sectionRows];
-	[self setHasMultiSelect:multiSelect];
-	[self setIsHighlighted:isHighlight];
-	[self drawCell:isHighlight];
+	[self setIsSelected:selected];
+	[self drawCell:selected];
 }
 
 - (void) drawCell: (BOOL)isHighlight {
@@ -105,14 +88,14 @@ NSString * const SelectedImageName = @"table_row_select.png";
 
 }
 
-- (void) changeLabelColors:(BOOL) isHightlighted {
+- (void) changeLabelColors:(BOOL) selected {
 
 	// Find all labels that are part of the content view
 	for (UIView *current in [self.contentView subviews]) {
 		
 		if ([current isKindOfClass:[UILabel class]]) {
 			UILabel *currentLabel = (UILabel *)current;
-			if(isHightlighted) {
+			if(selected) {
 				[currentLabel setTextColor:[UIColor whiteColor]];
 			}
 			else {

@@ -7,12 +7,17 @@
 #import <UIKit/UIKit.h>
 
 
-@interface FTPUITableView : UITableView {
+@interface FTPUIMultiSelectTableView : UITableView {
 
 	NSMutableArray *selectedTableCells;
+    BOOL isMultiSelect;
 }
 
 @property (nonatomic, retain) NSMutableArray *selectedTableCells;
+
+/* is the table set up for multi select If it is YES then the table will select multi items, 
+   if NO then the table will only select one item and the previously selected item will not longer be selected*/
+@property (nonatomic, assign) BOOL isMultiSelect;
 
 // Determiens if a specific table cell is selected
 - (BOOL) isTableCellSelected:(NSInteger) rowNumber;

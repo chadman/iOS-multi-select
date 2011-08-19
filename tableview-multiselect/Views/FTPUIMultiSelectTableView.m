@@ -6,16 +6,17 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "FTPUITableView.h"
-#import "FTPUITableCell.h"
+#import "FTPUIMultiSelectTableView.h"
+#import "FTPUIMultiSelectTableViewCell.h"
 
-@interface FTPUITableView (PRIVATE) 
+@interface FTPUIMultiSelectTableView (PRIVATE) 
 
 - (void) setNotification:(NSString *)value;
 @end
 
-@implementation FTPUITableView
+@implementation FTPUIMultiSelectTableView
 @synthesize selectedTableCells;
+@synthesize isMultiSelect;
 
 - (id)initWithFrame:(CGRect)frame style:(UITableViewStyle)aStyle {
 
@@ -47,12 +48,12 @@
 
 - (void) notificationChangeSelectedCells: (NSNotification *) notification {
 	
-	FTPUITableCell *notificationTableCell = (FTPUITableCell *)[notification object];
+	FTPUIMultiSelectTableViewCell *notificationTableCell = (FTPUIMultiSelectTableViewCell *)[notification object];
 	
-	if (notificationTableCell.hasMultiSelect) {
+	if (self.isMultiSelect) {
 		
 		// If the object is not a check in table cell, we are not interested in it
-		if ([[notification object] isKindOfClass:[FTPUITableCell class]]) {
+		if ([[notification object] isKindOfClass:[FTPUIMultiSelectTableViewCell class]]) {
 			
 			if ([self isTableCellSelected:[notificationTableCell rowNumber]]) {
 				[self.selectedTableCells removeObject:[NSNumber numberWithInteger:[notificationTableCell rowNumber]]];
@@ -69,13 +70,13 @@
 		// get all the visible cells to deselect one of the cells
 		NSArray *visible = [self visibleCells];
 		
-		for (FTPUITableCell *current in visible) {
+		for (FTPUIMultiSelectTableViewCell *current in visible) {
 			if (current.rowNumber != notificationTableCell.rowNumber) {
-				current.isHighlighted = NO;
+				current.isSelected = NO;
 				[current drawCell:NO];
 			}
 			else {
-				current.isHighlighted = YES;
+				current.isSelected = YES;
 				[current drawCell:YES];
 			}
 
