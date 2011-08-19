@@ -1,9 +1,7 @@
+
 //
-//  tableview_multiselectAppDelegate.h
-//  tableview-multiselect
-//
-//  Created by Chad Meyer on 8/16/11.
-//  Copyright 2011 __MyCompanyName__. All rights reserved.
+//  Created by Meyer, Chad on 8/18/10.
+//  Copyright 2011 52projects. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

@@ -1,9 +1,7 @@
+
 //
-//  CheckinUITableView.h
-//  F1Touch
-//
-//  Created by Meyer, Chad on 2/28/10.
-//  Copyright 2010 __MyCompanyName__. All rights reserved.
+//  Created by Meyer, Chad on 8/18/10.
+//  Copyright 2011 52projects. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
