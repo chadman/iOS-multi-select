@@ -101,12 +101,6 @@
 	return selectedFound;
 }
 
-- (CGFloat)getHeightForText:(NSString *)text {
-	CGSize aSize = [text sizeWithFont:[UIFont boldSystemFontOfSize:11] constrainedToSize:CGSizeMake(200, 1000) lineBreakMode:UILineBreakModeWordWrap];
-	
-	return aSize.height;
-}
-
 #pragma mark -
 #pragma mark Overrideen Methods
 

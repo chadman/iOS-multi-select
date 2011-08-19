@@ -22,8 +22,6 @@
 // Determiens if a specific table cell is selected
 - (BOOL) isTableCellSelected:(NSInteger) rowNumber;
 
-- (CGFloat)getHeightForText:(NSString *)text;
-
 // If multi select is going to occur, init the table with this method to add the notification name
 - (id)initWithFrame:(CGRect)frame style:(UITableViewStyle)aStyle notification:(NSString *)notification;
 
