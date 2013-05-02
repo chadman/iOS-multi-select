@@ -88,19 +88,13 @@
 }
 
 - (BOOL) isTableCellSelected:(NSInteger) rowNumber {
-	
+
 	BOOL selectedFound = NO;
-	
-	
-	// Determine if the table cell should be part of the list
-	for (NSNumber *current in self.selectedTableCells) {
-		// The array holds the row number so remove it
-		if (current == [NSNumber numberWithInteger:rowNumber]) {
-			selectedFound = YES;
-			break;
-		}
-	}
-	
+
+  if([self.selectedTableCells containsObject:[NSNumber numberWithInteger:rowNumber]]) {
+    selectedFound = YES;
+  }
+
 	return selectedFound;
 }
 
