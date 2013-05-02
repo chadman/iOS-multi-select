@@ -77,7 +77,7 @@
 	[toolBarButton release];
 	[toolBarButtons release];
 
-    tableResults = [[NSArray alloc] initWithObjects:@"Page One", @"Page Two", @"Page Three", @"Page Four", nil];
+    tableResults = [[NSArray alloc] initWithObjects:@"Page One", @"Page Two", @"Page Three", @"Page Four", @"Page Five", @"Page Six", @"Page Seven", @"Page Eight", @"Page Nine", @"Page Ten", @"Page Eleven", @"Page Twelve", @"Page Thirteen", @"Page Fourteen", @"Page Fifteen", nil];
     
     [super viewDidLoad];
 }
